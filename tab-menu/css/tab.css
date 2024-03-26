@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.wrapper{
+    width: 970px;
+    margin: 70px auto;
+}
+.tabs ul{
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.tabs ul li{
+    text-transform: uppercase;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.tabs ul li .icon{
+    font-size: 23px;
+    margin-right: 5px;
+}
+.tabs ul li:last-child{
+    border-right: none;
+}
+.tabs ul li::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #028f68;
+    opacity: 0;
+    transition: all 0.2 ease;
+}
+.tabs ul li:hover,
+.tabs ul li.active{
+    background-color: #e8f5f1;
+    color: #028f68;
+}
+.tabs ul li:hover::before,
+.tabs ul li:active:before{
+    opacity: 1;
+}
+
+.content{
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+.tab-wrap .title{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tab-wrap .tab-content p{
+   font-size: 20px;
+   line-height: 35px;
+   margin-bottom: 10px;
+}
